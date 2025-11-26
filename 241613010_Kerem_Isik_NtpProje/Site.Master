@@ -1,0 +1,292 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="_241613010_Kerem_Isik_NtpProje.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="description" content="Multipurpose HTML5 Themplate">
+    <meta name="author" content="pixel-industry">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/basic.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/orange.css" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" media="screen" />
+
+    <!-- revolution slider settings -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/revolution.css" media="screen" />
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="pixons/style.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="style-switcher/styleSwitcher.css" media="screen" />
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="js/selectivizr-min.js"></script>
+<![endif]-->
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="css/ie8.css" media="screen" />
+<![endif]-->
+    <style>
+        #logo {
+            padding-top: 8px;
+            display: flex;
+            align-items: center;
+            width: 100px;
+            height: 32px;
+            margin-left: -30px;
+        }
+
+            #logo img {
+                max-height: 150px;
+                max-width: 175%;
+                width: auto;
+                height: auto;
+            }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- #header-wrapper start -->
+            <section id="header-wrapper" class="clearfix">
+                <!-- #header start -->
+                <header id="header" class="clearfix">
+
+                    <!-- #logo start -->
+                    <section id="logo">
+                        <a href="index.aspx">
+                            <img src="img/red/logoo.png" alt="logo" />
+                        </a>
+                    </section>
+                    <!-- #logo end -->
+
+                    <!-- contact-info-container -->
+                    <section id="contact-info-container">
+                        <ul class="info">
+                            <li>
+                                <span class="text-dark">Bizi Arayın:</span>
+                                <asp:Literal ID="litPhoneHeader" runat="server"></asp:Literal>
+                            </li>
+                            <li>
+                                <span class="text-dark">E-posta: </span>
+                                <a class="text-color" href="#">
+                                    <asp:Literal ID="litEmailHeader" runat="server"></asp:Literal>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- .contact-info-container end -->
+                </header>
+                <!-- #header end -->
+
+                <!-- #nav-container start -->
+                <section id="nav-container">
+
+                    <section class="container_12">
+                        <section class="grid_12">
+                            <!-- #nav start -->
+                            <nav id="nav">
+                                <ul>
+                                    <li class="current-menu-item">
+                                        <span class="nav-icon icon-home"></span>
+                                        <a href="index.aspx">Anasayfa</a>
+                                    </li>
+
+                                    <li>
+                                        <span class="nav-icon icon-user"></span>
+                                        <a href="hakkimizda.aspx">Hakkımızda</a> </li>
+                                    <li>
+                                        <span class="nav-icon icon-cogs"></span>
+                                        <a href="hizmetlerimiz.aspx">Hizmetlerimiz</a></li>
+                                    <li>
+                                        <span class="nav-icon icon-camera"></span>
+                                        <a href="calismalarimiz.aspx">Projelerimiz</a> </li>
+
+
+
+
+
+                                    <li>
+                                        <span class="nav-icon icon-map-marker"></span>
+                                        <a href="iletisim.aspx">İletişim</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- #nav end -->
+
+                            <!-- responsive navigation start -->
+                            <select id="nav-responsive">
+                                <option selected="" value="">Site Menü...</option>
+
+                                <option value="index.aspx">Anasayfa</option>
+
+                                <option value="hakkimizda.aspx">Hakkımızda</option>
+                                <option value="hizmetlerimiz.aspx">Hizmetlerimiz</option>
+                                <option value="calismalarimiz.aspx">Çalışmalarımız</option>
+
+
+                                <option value="iletisim.aspx">Contact</option>
+                            </select><!-- responsive navigation end -->
+
+
+                        </section>
+                        <!-- .grid_12 end -->
+                    </section>
+                    <!-- .container_12 end -->
+
+                </section>
+                <!-- #nav-container end -->
+            </section>
+            <!-- 3header-wrapper end -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- #footer-wrapper start -->
+            <div id="footer-wrapper" class="clearfix">
+
+                <!-- #footer -->
+                <footer id="footer" class="container_12">
+
+                    <!-- .footer-widget-container start -->
+                    <ul class="footer-widget-container grid_3">
+                        <li class="widget widget_text">
+                            <div class="title">
+                                <h5>BİZE ULAŞIN</h5>
+                            </div>
+                            <ul class="contact-info">
+                                <li style="padding-left: 0; background: none;">
+                                    <span class="icon-map-marker" style="float: left; margin-right: 10px; font-size: 20px; color: #ea5426;"></span>
+
+                                    <p>Adres:
+                                        <asp:Literal ID="litAddressFooter" runat="server"></asp:Literal></p>
+                                </li>
+
+                                <li style="padding-left: 0; background: none; margin-top: 10px;">
+                                    <span class="icon-phone" style="float: left; margin-right: 10px; font-size: 20px; color: #ea5426;"></span>
+
+                                    <p>Telefon:
+                                        <asp:Literal ID="litPhoneFooter" runat="server"></asp:Literal></p>
+                                </li>
+
+                                <li style="padding-left: 0; background: none; margin-top: 10px;">
+                                    <span class="icon-envelope" style="float: left; margin-right: 10px; font-size: 20px; color: #ea5426;"></span>
+
+                                    <p>E-posta: <a href='#'>
+                                        <asp:Literal ID="litEmailFooter" runat="server"></asp:Literal>
+                                    </a></p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- .footer-widget-container end -->
+
+                    <!-- .footer-widget-container start -->
+                    <ul class="footer-widget-container grid_3">
+                        <!-- .widget pi_recent_posts start -->
+                        <li class="widget pi_recent_posts">
+                            <div class="title">
+                                <h5>BİZİ TANIYIN</h5>
+                            </div>
+
+                            <p>
+                                Bu yazı site tasarımlarında kullanma amacıyla yazılmıştır. Site tasarımında kullanılan bu yazılar siteyi doldurmak amacıyla yazılmıştır.Bu yazı site tasarımlarında kullanma amacıyla yazılmıştır. Site tasarımında kullanılan bu yazılar siteyi doldurmak amacıyla yazılmıştır.
+                            </p>
+
+
+                        </li>
+                        <!-- .widget pi_recent_posts end -->
+                    </ul>
+                    <!-- .footer-widget-container end -->
+
+                    <!-- .footer-widget-container end -->
+
+                    <!-- .footer-widget-container start -->
+                    <ul class="footer-widget-container grid_3">
+
+                        <!-- .widget.widget_text start -->
+                        <li class="widget widget_text">
+                            <div class="title">
+                                <h5>E-BÜLTEN</h5>
+                            </div>
+
+                            <p>
+                                E-bültenimize kaydolarak şirketimizin yeniliklerinden haberdar olabilirsiniz...
+                            </p>
+
+                            <br />
+
+                            <form class="newsletter">
+                                <input type="email" class="email" placeholder="E-posta Adresiniz">
+                                <input type="submit" class="submit" value="Gönder">
+                            </form>
+                        </li>
+                        <!-- .widget.widget_text end -->
+
+                    </ul>
+                    <!-- footer-widget-container end -->
+                </footer>
+                <!-- #footer end -->
+
+                <!-- .container_12.copyright-container start -->
+                <div class="container_12 copyright-container">
+
+                    <!-- .grid_12 start -->
+                    <div class="grid_12">
+
+                        <div class="grid_6 alpha">
+                            <p>
+                                Copyright Şirket İsmi 2013.
+                            </p>
+                        </div>
+
+                        <div class="grid_6 omega">
+                            <ul class="footer-breadcrumbs">
+                                <li>
+                                    <a href="index.aspx">Anasayfa</a>
+                                </li>
+
+                                <li>
+                                    <a href="hakkimizda.aspx">Hakkımızda</a>
+                                </li>
+
+                                <li>
+                                    <a href="hizmetlerimiz.aspx">HİZMETLERİMİZ</a>
+                                </li>
+
+                                <li>
+                                    <a href="calismalarimiz.aspx">Çalışmalarımız</a>
+                                </li>
+
+                                <li>
+                                    <a href="iletisim.aspx">İLETİŞİM</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- .grid_6 omega end -->
+                    </div>
+                    <!-- .grid_12 end -->
+                </div>
+                <!-- .container_12.copyright-container end -->
+            </div>
+            <!-- #footer-wrapper end -->
+        </div>
+    </form>
+</body>
+</html>
