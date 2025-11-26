@@ -1,0 +1,1 @@
+# 241613010_Kerem_Isik_NtpProje
